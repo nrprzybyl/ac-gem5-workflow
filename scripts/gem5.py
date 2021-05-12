@@ -36,7 +36,7 @@ print(data)
 if(data[5] == 'None'):
 	if(data[2] == 'OFF'):
 		cmd=''+pth+'/build/X86/gem5.fast --outdir=exp_'+exp+'/m5out_'+str(i)+' -r '+pth+'/configs/example/fs.py --disk-image='+pth+'/fs_images/disks/linux-x86.img --kernel='+pth+'/fs_images/binaries/x86_64-vmlinux-2.6.22.9 --script='+pth+'/test --cpu-type=TimingSimpleCPU --caches --l1d_size='+str(data[0])+'kB --l1d_assoc='+str(data[1])+' --mem-type='+str(data[4])+' --cacheline_size='+str(data[6])
-	
+
 	else:
 		cmd=''+pth+'/build/X86/gem5.fast --outdir=exp_'+exp+'/m5out_'+str(i)+' -r '+pth+'/configs/example/fs.py --disk-image='+pth+'/fs_images/disks/linux-x86.img --kernel='+pth+'/fs_images/binaries/x86_64-vmlinux-2.6.22.9 --script='+pth+'/test --cpu-type=TimingSimpleCPU --caches --l1d_size='+str(data[0])+'kB --l1d_assoc='+str(data[1])+' --l2cache --l2_assoc='+str(data[3])+' --mem-type='+str(data[4])+' --cacheline_size='+str(data[6])
 else:
