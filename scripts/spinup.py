@@ -5,7 +5,7 @@ import random
 def anydup(thelist):
   	seen = set()
   	for x in thelist:
-		if x in seen: return True    	
+		if x in seen: return True
 		seen.add(x)
   	return False
 
@@ -26,7 +26,7 @@ for i in range(int(nruns)):
 #print("any duplicates? {0}").format(anydup(indices))
 
 
-	cmd='sbatch --export=exp='+exp+',i='+str(i)+',p='+str(index)+' ~/test/script.slurm'
+	cmd='sbatch --export=exp='+exp+',i='+str(i)+',p='+str(index)+' ~/ac-gem5-workflow/scripts/script.slurm'
 	os.system(cmd)
 
 opth = 'datasets/'+exp

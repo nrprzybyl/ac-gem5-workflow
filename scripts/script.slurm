@@ -8,6 +8,7 @@
 #SBATCH -t 00:15:00
 
 module load gnu8/8.3.0
-export PYTHONPATH=/home/nprzybylski/env/lib/python2.7/site-packages/
+#export PYTHONPATH=/home/nprzybylski/env/lib/python2.7/site-packages/
+export PYTHONPATH=~/env/lib/python2.7/site-packages/
 
-python ~/test/gem5.py ${i} ${exp} ${p}
+python ~/ac-gem5-workflow/scripts/gem5.py ${i} ${exp} ${p}

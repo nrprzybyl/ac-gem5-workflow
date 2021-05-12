@@ -27,7 +27,8 @@ for d in range(len(split_line)):
             	d = split_line[d].split("'")[1]
 	data.append(d)
 
-pth='/home/nprzybylski/gem5'
+#pth='/home/nprzybylski/gem5'
+pth='~/gem5'
 
 print(data)
 
